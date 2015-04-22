@@ -1,0 +1,24 @@
+hosted_zone "affecto.xyz." do
+
+  rrset "cassandra1.poc.affecto.xyz.", "A" do
+    ttl 500
+    resource_records(
+      "52.28.61.24",
+    )
+  end
+
+  rrset "cassandra2.poc.affecto.xyz.", "A" do
+    ttl 500
+    resource_records(
+      "52.28.64.219",
+    )
+  end
+
+  rrset "*.local.affecto.xyz.", "A" do
+    ttl 500
+    resource_records(
+      "127.0.0.1",
+    )
+  end
+
+end
