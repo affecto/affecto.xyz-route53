@@ -6,6 +6,4 @@ env:
     - secure: "NEyPWuY/+QFc6NNHyw+LVa887c09COxS2dwXURchWTHsHS+fXlNUFu8A2mW2/ns8p7eWw0LsQQ8APA+hmW3+BjeSmgAPRwUvgn1HxZ3c+NxlRZ3NqIHOkzSmfa80IjUNdxMTZr8Ut+vCuP5eehPs6K76Hh+9D62263Pt8tpOuos="
     - secure: "aHMv9QvVjCKkLTlWisj687tmyahh4rVxBf7UxQrvex7m2yP31T3bWnQXNA9jSjWuxpFBOjRv6Ak4Tc65k3hR9v2FRRtQEbkZwSDk/DQnDj97zCy68lI4dQeZ/+YhC0/HchqBCf5IGZe4NIxfZtBkieg0gMbwzWj+OJuwgUhJjUA="
 script:
-- bundle exec roadwork -t
-after_script:
-- bundle exec roadwork -a --target-zone affecto.xyz
+- bundle exec roadwork -a --no-color --target-zone affecto.xyz

@@ -7,6 +7,13 @@ hosted_zone "affecto.xyz." do
     )
   end
 
+  rrset "asdf.tribes.affecto.xyz.", "A" do
+    ttl 500
+    resource_records(
+      "172.17.15.230",
+    )
+  end
+
   rrset "cassandra1.poc.affecto.xyz.", "A" do
     ttl 500
     resource_records(
