@@ -21,6 +21,13 @@ hosted_zone "affecto.xyz." do
     )
   end
 
+  rrset "palaute.poc.affecto.xyz.", "CNAME" do
+    ttl 500
+    resource_records(
+      "wwwloadbalancer-2041390181.eu-west-1.elb.amazonaws.com",
+    )
+  end
+
   rrset "*.local.affecto.xyz.", "A" do
     ttl 500
     resource_records(
