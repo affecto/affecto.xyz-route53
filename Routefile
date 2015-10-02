@@ -21,10 +21,6 @@ hosted_zone "affecto.xyz." do
     )
   end
 
-end
-
-hosted_zone "eimaffecto.affecto.xyz." do
-
   rrset "eimaffecto.affecto.xyz.", "TXT" do 
     ttl 3600 
     resource_records(
