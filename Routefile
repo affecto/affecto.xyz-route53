@@ -21,10 +21,38 @@ hosted_zone "affecto.xyz." do
     )
   end
 
+end
+
+hosted_zone "eimaffecto.affecto.xyz." do
+
   rrset "eimaffecto.affecto.xyz.", "TXT" do 
     ttl 3600 
     resource_records(
-      '"MS=ms32124233"' 
+      '"MS=ms32124233"',
+      '"v=spf1 include:spf.protection.outlook.com -all"' 
     )
   end
+
+  rrset "eimaffecto.affecto.xyz.", "MX" do 
+    ttl 3600 
+    resource_records(
+      "0 eimaffecto-affecto-xyz.mail.protection.outlook.com" 
+    )
+  end
+
+  rrset "autodiscover.eimaffecto.affecto.xyz.", "CNAME" do 
+    ttl 3600 
+    resource_records(
+      "autodiscover.outlook.com" 
+    )
+  end
+
+  rrset "msoid.eimaffecto.affecto.xyz.", "CNAME" do 
+    ttl 3600 
+    resource_records(
+      "clientconfig.microsoftonline-p.net" 
+    )
+  end
+
 end
+
