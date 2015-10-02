@@ -21,4 +21,10 @@ hosted_zone "affecto.xyz." do
     )
   end
 
+  rrset "eimaffecto.affecto.xyz.", "TXT" do 
+    ttl 3600 
+    resource_records(
+      '"MS=ms32124233"' 
+    )
+  end
 end
