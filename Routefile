@@ -7,6 +7,27 @@ hosted_zone "affecto.xyz." do
     )
   end
 
+  rrset "openshift-master.infra.affecto.xyz.", "A" do
+    ttl 500
+    resource_records(
+      "52.29.36.79",
+    )
+  end
+
+  rrset "openshift-node1.infra.affecto.xyz.", "A" do
+    ttl 500
+    resource_records(
+      "52.29.42.74",
+    )
+  end
+
+  rrset "openshift-node2.infra.affecto.xyz.", "A" do
+    ttl 500
+    resource_records(
+      "52.29.53.211",
+    )
+  end
+
   rrset "palaute.poc.affecto.xyz.", "CNAME" do
     ttl 500
     resource_records(
