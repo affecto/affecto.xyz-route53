@@ -10,21 +10,21 @@ hosted_zone "affecto.xyz." do
   rrset "openshift-master.infra.affecto.xyz.", "A" do
     ttl 500
     resource_records(
-      "52.29.36.79",
+      "52.28.210.202",
     )
   end
 
   rrset "openshift-node1.infra.affecto.xyz.", "A" do
     ttl 500
     resource_records(
-      "52.29.42.74",
+      "52.28.77.132",
     )
   end
 
   rrset "openshift-node2.infra.affecto.xyz.", "A" do
     ttl 500
     resource_records(
-      "52.29.53.211",
+      "52.29.69.89",
     )
   end
 
