@@ -7,69 +7,54 @@ hosted_zone "affecto.xyz." do
     )
   end
 
-  rrset "openshift-master.infra.affecto.xyz.", "A" do
-    ttl 500
-    resource_records(
-      "52.28.210.202",
-    )
-  end
-
-  rrset "openshift-node1.infra.affecto.xyz.", "A" do
-    ttl 500
+  rrset "ex1.swat.affecto.xyz.", "A" do
+    ttl 300
     resource_records(
       "52.28.77.132",
     )
   end
 
-  rrset "openshift-node2.infra.affecto.xyz.", "A" do
-    ttl 500
-    resource_records(
-      "52.29.69.89",
-    )
-  end
-
   rrset "palaute.poc.affecto.xyz.", "CNAME" do
-    ttl 500
+    ttl 300
     resource_records(
       "wwwloadbalancer-2041390181.eu-west-1.elb.amazonaws.com",
     )
   end
 
   rrset "*.local.affecto.xyz.", "A" do
-    ttl 500
+    ttl 300
     resource_records(
       "127.0.0.1",
     )
   end
 
-  rrset "eimaffecto.affecto.xyz.", "TXT" do 
-    ttl 3600 
+  rrset "eimaffecto.affecto.xyz.", "TXT" do
+    ttl 3600
     resource_records(
       '"MS=ms32124233"',
-      '"v=spf1 include:spf.protection.outlook.com -all"' 
+      '"v=spf1 include:spf.protection.outlook.com -all"'
     )
   end
 
-  rrset "eimaffecto.affecto.xyz.", "MX" do 
-    ttl 3600 
+  rrset "eimaffecto.affecto.xyz.", "MX" do
+    ttl 3600
     resource_records(
-      "0 eimaffecto-affecto-xyz.mail.protection.outlook.com" 
+      "0 eimaffecto-affecto-xyz.mail.protection.outlook.com"
     )
   end
 
-  rrset "autodiscover.eimaffecto.affecto.xyz.", "CNAME" do 
-    ttl 3600 
+  rrset "autodiscover.eimaffecto.affecto.xyz.", "CNAME" do
+    ttl 3600
     resource_records(
-      "autodiscover.outlook.com" 
+      "autodiscover.outlook.com"
     )
   end
 
-  rrset "msoid.eimaffecto.affecto.xyz.", "CNAME" do 
-    ttl 3600 
+  rrset "msoid.eimaffecto.affecto.xyz.", "CNAME" do
+    ttl 3600
     resource_records(
-      "clientconfig.microsoftonline-p.net" 
+      "clientconfig.microsoftonline-p.net"
     )
   end
 
 end
-
