@@ -1,5 +1,19 @@
 hosted_zone "affecto.xyz." do
 
+  rrset "va1.video.affecto.xyz.", "A" do
+    ttl 500
+    resource_records(
+      "52.59.158.21",
+    )
+  end
+
+  rrset "va1-test.video.affecto.xyz.", "A" do
+    ttl 500
+    resource_records(
+      "52.59.158.53",
+    )
+  end
+
   rrset "tribes.affecto.xyz.", "A" do
     ttl 500
     resource_records(
